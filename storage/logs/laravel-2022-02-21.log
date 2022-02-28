@@ -1,0 +1,84 @@
+[2022-02-21 05:51:01] local.ERROR: Could not check compatibility between App\Sancofa\ReservedBook::getActivitylogOptions(): App\Sancofa\LogOptions and Spatie\Activitylog\Traits\LogsActivity::getActivitylogOptions(): Spatie\Activitylog\LogOptions, because class App\Sancofa\LogOptions is not available {"userId":1,"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Could not check compatibility between App\\Sancofa\\ReservedBook::getActivitylogOptions(): App\\Sancofa\\LogOptions and Spatie\\Activitylog\\Traits\\LogsActivity::getActivitylogOptions(): Spatie\\Activitylog\\LogOptions, because class App\\Sancofa\\LogOptions is not available at /home/super/Documents/projects/Sankofa/app/Sancofa/ReservedBook.php:34)
+[stacktrace]
+#0 {main}
+"} 
+[2022-02-21 05:54:32] local.ERROR: Could not check compatibility between App\Sancofa\ReservedBook::getActivitylogOptions(): App\Sancofa\LogOptions and Spatie\Activitylog\Traits\LogsActivity::getActivitylogOptions(): Spatie\Activitylog\LogOptions, because class App\Sancofa\LogOptions is not available {"userId":1,"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Could not check compatibility between App\\Sancofa\\ReservedBook::getActivitylogOptions(): App\\Sancofa\\LogOptions and Spatie\\Activitylog\\Traits\\LogsActivity::getActivitylogOptions(): Spatie\\Activitylog\\LogOptions, because class App\\Sancofa\\LogOptions is not available at /home/super/Documents/projects/Sankofa/app/Sancofa/ReservedBook.php:34)
+[stacktrace]
+#0 {main}
+"} 
+[2022-02-21 06:02:12] local.ERROR: SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'book_rank' already exists (SQL: create table `book_rank` (`id` bigint unsigned not null auto_increment primary key, `created_at` timestamp null, `updated_at` timestamp null, `book_name` varchar(191) not null, `no_reading` bigint not null, `year` int not null) default character set utf8mb4 collate 'utf8mb4_unicode_ci') {"exception":"[object] (Illuminate\\Database\\QueryException(code: 42S01): SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'book_rank' already exists (SQL: create table `book_rank` (`id` bigint unsigned not null auto_increment primary key, `created_at` timestamp null, `updated_at` timestamp null, `book_name` varchar(191) not null, `no_reading` bigint not null, `year` int not null) default character set utf8mb4 collate 'utf8mb4_unicode_ci') at /home/super/Documents/projects/Sankofa/vendor/laravel/framework/src/Illuminate/Database/Connection.php:703)
+[stacktrace]
+#0 /home/super/Documents/projects/Sankofa/vendor/laravel/framework/src/Illuminate/Database/Connection.php(663): Illuminate\\Database\\Connection->runQueryCallback()
+#1 /home/super/Documents/projects/Sankofa/vendor/laravel/framework/src/Illuminate/Database/Connection.php(493): Illuminate\\Database\\Connection->run()
+#2 /home/super/Documents/projects/Sankofa/vendor/laravel/framework/src/Illuminate/Database/Schema/Blueprint.php(109): Illuminate\\Database\\Connection->statement()
+#3 /home/super/Documents/projects/Sankofa/vendor/laravel/framework/src/Illuminate/Database/Schema/Builder.php(365): Illuminate\\Database\\Schema\\Blueprint->build()
+#4 /home/super/Documents/projects/Sankofa/vendor/laravel/framework/src/Illuminate/Database/Schema/Builder.php(228): Illuminate\\Database\\Schema\\Builder->build()
+#5 /home/super/Documents/projects/Sankofa/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php(261): Illuminate\\Database\\Schema\\Builder->create()
+#6 /home/super/Documents/projects/Sankofa/database/migrations/2019_09_05_172945_create_book_rank_table.php(22): Illuminate\\Support\\Facades\\Facade::__callStatic()
+#7 /home/super/Documents/projects/Sankofa/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(394): CreateBookRankTable->up()
+#8 /home/super/Documents/projects/Sankofa/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(403): Illuminate\\Database\\Migrations\\Migrator->Illuminate\\Database\\Migrations\\{closure}()
+#9 /home/super/Documents/projects/Sankofa/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(202): Illuminate\\Database\\Migrations\\Migrator->runMigration()
+#10 /home/super/Documents/projects/Sankofa/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(167): Illuminate\\Database\\Migrations\\Migrator->runUp()
+#11 /home/super/Documents/projects/Sankofa/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(112): Illuminate\\Database\\Migrations\\Migrator->runPending()
+#12 /home/super/Documents/projects/Sankofa/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(85): Illuminate\\Database\\Migrations\\Migrator->run()
+#13 /home/super/Documents/projects/Sankofa/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(585): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->Illuminate\\Database\\Console\\Migrations\\{closure}()
+#14 /home/super/Documents/projects/Sankofa/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(94): Illuminate\\Database\\Migrations\\Migrator->usingConnection()
+#15 /home/super/Documents/projects/Sankofa/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(36): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->handle()
+#16 /home/super/Documents/projects/Sankofa/vendor/laravel/framework/src/Illuminate/Container/Util.php(40): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#17 /home/super/Documents/projects/Sankofa/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure()
+#18 /home/super/Documents/projects/Sankofa/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod()
+#19 /home/super/Documents/projects/Sankofa/vendor/laravel/framework/src/Illuminate/Container/Container.php(653): Illuminate\\Container\\BoundMethod::call()
+#20 /home/super/Documents/projects/Sankofa/vendor/laravel/framework/src/Illuminate/Console/Command.php(136): Illuminate\\Container\\Container->call()
+#21 /home/super/Documents/projects/Sankofa/vendor/symfony/console/Command/Command.php(299): Illuminate\\Console\\Command->execute()
+#22 /home/super/Documents/projects/Sankofa/vendor/laravel/framework/src/Illuminate/Console/Command.php(121): Symfony\\Component\\Console\\Command\\Command->run()
+#23 /home/super/Documents/projects/Sankofa/vendor/symfony/console/Application.php(978): Illuminate\\Console\\Command->run()
+#24 /home/super/Documents/projects/Sankofa/vendor/symfony/console/Application.php(295): Symfony\\Component\\Console\\Application->doRunCommand()
+#25 /home/super/Documents/projects/Sankofa/vendor/symfony/console/Application.php(167): Symfony\\Component\\Console\\Application->doRun()
+#26 /home/super/Documents/projects/Sankofa/vendor/laravel/framework/src/Illuminate/Console/Application.php(94): Symfony\\Component\\Console\\Application->run()
+#27 /home/super/Documents/projects/Sankofa/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(129): Illuminate\\Console\\Application->run()
+#28 /home/super/Documents/projects/Sankofa/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle()
+#29 {main}
+
+[previous exception] [object] (PDOException(code: 42S01): SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'book_rank' already exists at /home/super/Documents/projects/Sankofa/vendor/laravel/framework/src/Illuminate/Database/Connection.php:492)
+[stacktrace]
+#0 /home/super/Documents/projects/Sankofa/vendor/laravel/framework/src/Illuminate/Database/Connection.php(492): PDOStatement->execute()
+#1 /home/super/Documents/projects/Sankofa/vendor/laravel/framework/src/Illuminate/Database/Connection.php(696): Illuminate\\Database\\Connection->Illuminate\\Database\\{closure}()
+#2 /home/super/Documents/projects/Sankofa/vendor/laravel/framework/src/Illuminate/Database/Connection.php(663): Illuminate\\Database\\Connection->runQueryCallback()
+#3 /home/super/Documents/projects/Sankofa/vendor/laravel/framework/src/Illuminate/Database/Connection.php(493): Illuminate\\Database\\Connection->run()
+#4 /home/super/Documents/projects/Sankofa/vendor/laravel/framework/src/Illuminate/Database/Schema/Blueprint.php(109): Illuminate\\Database\\Connection->statement()
+#5 /home/super/Documents/projects/Sankofa/vendor/laravel/framework/src/Illuminate/Database/Schema/Builder.php(365): Illuminate\\Database\\Schema\\Blueprint->build()
+#6 /home/super/Documents/projects/Sankofa/vendor/laravel/framework/src/Illuminate/Database/Schema/Builder.php(228): Illuminate\\Database\\Schema\\Builder->build()
+#7 /home/super/Documents/projects/Sankofa/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php(261): Illuminate\\Database\\Schema\\Builder->create()
+#8 /home/super/Documents/projects/Sankofa/database/migrations/2019_09_05_172945_create_book_rank_table.php(22): Illuminate\\Support\\Facades\\Facade::__callStatic()
+#9 /home/super/Documents/projects/Sankofa/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(394): CreateBookRankTable->up()
+#10 /home/super/Documents/projects/Sankofa/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(403): Illuminate\\Database\\Migrations\\Migrator->Illuminate\\Database\\Migrations\\{closure}()
+#11 /home/super/Documents/projects/Sankofa/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(202): Illuminate\\Database\\Migrations\\Migrator->runMigration()
+#12 /home/super/Documents/projects/Sankofa/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(167): Illuminate\\Database\\Migrations\\Migrator->runUp()
+#13 /home/super/Documents/projects/Sankofa/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(112): Illuminate\\Database\\Migrations\\Migrator->runPending()
+#14 /home/super/Documents/projects/Sankofa/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(85): Illuminate\\Database\\Migrations\\Migrator->run()
+#15 /home/super/Documents/projects/Sankofa/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(585): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->Illuminate\\Database\\Console\\Migrations\\{closure}()
+#16 /home/super/Documents/projects/Sankofa/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(94): Illuminate\\Database\\Migrations\\Migrator->usingConnection()
+#17 /home/super/Documents/projects/Sankofa/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(36): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->handle()
+#18 /home/super/Documents/projects/Sankofa/vendor/laravel/framework/src/Illuminate/Container/Util.php(40): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#19 /home/super/Documents/projects/Sankofa/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure()
+#20 /home/super/Documents/projects/Sankofa/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod()
+#21 /home/super/Documents/projects/Sankofa/vendor/laravel/framework/src/Illuminate/Container/Container.php(653): Illuminate\\Container\\BoundMethod::call()
+#22 /home/super/Documents/projects/Sankofa/vendor/laravel/framework/src/Illuminate/Console/Command.php(136): Illuminate\\Container\\Container->call()
+#23 /home/super/Documents/projects/Sankofa/vendor/symfony/console/Command/Command.php(299): Illuminate\\Console\\Command->execute()
+#24 /home/super/Documents/projects/Sankofa/vendor/laravel/framework/src/Illuminate/Console/Command.php(121): Symfony\\Component\\Console\\Command\\Command->run()
+#25 /home/super/Documents/projects/Sankofa/vendor/symfony/console/Application.php(978): Illuminate\\Console\\Command->run()
+#26 /home/super/Documents/projects/Sankofa/vendor/symfony/console/Application.php(295): Symfony\\Component\\Console\\Application->doRunCommand()
+#27 /home/super/Documents/projects/Sankofa/vendor/symfony/console/Application.php(167): Symfony\\Component\\Console\\Application->doRun()
+#28 /home/super/Documents/projects/Sankofa/vendor/laravel/framework/src/Illuminate/Console/Application.php(94): Symfony\\Component\\Console\\Application->run()
+#29 /home/super/Documents/projects/Sankofa/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(129): Illuminate\\Console\\Application->run()
+#30 /home/super/Documents/projects/Sankofa/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle()
+#31 {main}
+"} 
+[2022-02-21 06:10:45] local.ERROR: Could not check compatibility between App\Sancofa\ReservedBook::getActivitylogOptions(): App\Sancofa\LogOptions and Spatie\Activitylog\Traits\LogsActivity::getActivitylogOptions(): Spatie\Activitylog\LogOptions, because class App\Sancofa\LogOptions is not available {"userId":1,"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Could not check compatibility between App\\Sancofa\\ReservedBook::getActivitylogOptions(): App\\Sancofa\\LogOptions and Spatie\\Activitylog\\Traits\\LogsActivity::getActivitylogOptions(): Spatie\\Activitylog\\LogOptions, because class App\\Sancofa\\LogOptions is not available at /home/super/Documents/projects/Sankofa/app/Sancofa/ReservedBook.php:34)
+[stacktrace]
+#0 {main}
+"} 
+[2022-02-21 06:12:27] local.ERROR: Could not check compatibility between App\Sancofa\ReservedBook::getActivitylogOptions(): App\Sancofa\LogOptions and Spatie\Activitylog\Traits\LogsActivity::getActivitylogOptions(): Spatie\Activitylog\LogOptions, because class App\Sancofa\LogOptions is not available {"userId":1,"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Could not check compatibility between App\\Sancofa\\ReservedBook::getActivitylogOptions(): App\\Sancofa\\LogOptions and Spatie\\Activitylog\\Traits\\LogsActivity::getActivitylogOptions(): Spatie\\Activitylog\\LogOptions, because class App\\Sancofa\\LogOptions is not available at /home/super/Documents/projects/Sankofa/app/Sancofa/ReservedBook.php:34)
+[stacktrace]
+#0 {main}
+"} 
